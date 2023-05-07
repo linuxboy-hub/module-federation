@@ -87,7 +87,7 @@ remotes: {
 name: "microfrontend",
 filename: "mfRemoteEntry.js", //Nombre de archivo que se expone, tiene todas las definiciones del modulo
 exposes: {
-'./GuestModule': './projects/microfrontend/src/app/guest/guest.module.ts',
+   './GuestModule': './projects/microfrontend/src/app/guest/guest.module.ts',
 },
 ```
 
@@ -95,8 +95,8 @@ exposes: {
 
     ```
     {
-    path: 'microfrontend',
-    loadChildren: () => import('microfrontend/ModuleName').then(m => m.ModuleName)
+      path: 'microfrontend',
+      loadChildren: () => import('microfrontend/ModuleName').then(m => m.ModuleName)
     }
     ```
 
