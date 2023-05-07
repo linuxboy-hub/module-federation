@@ -47,7 +47,10 @@ Pasos para el module federation:
    ```
 
 7. Verificamos esto mismo para el microfrontend
-   ng s microfront -o //Liberar antes el puerto que tiene usado el host
+   ```
+   //Liberar antes el puerto que tiene usado el host
+   ng s microfront -o
+   ```
 
 ## INSTALACION DE MODULE FEDERATION
 
