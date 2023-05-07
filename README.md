@@ -74,22 +74,22 @@ Pasos para el module federation:
     Si es el host debo especificar el microfront que quiero consumir, el puerto y el nombre del
     archivo js que está expuesto, por ejemplo:
 
-```
-remotes: {
-   "microfrontend": "http://localhost:4242/mfRemoteEntry.js",
-},
-```
+    ```
+    remotes: {
+       "microfrontend": "http://localhost:4242/mfRemoteEntry.js",
+    },
+    ```
 
     Si es en el microfrontend se debe especificar que es lo que se quiere exponer de ese proyecto,
     por ejemplo un módulo específico, algo como:
 
-```
-name: "microfrontend",
-filename: "mfRemoteEntry.js", //Nombre de archivo que se expone, tiene todas las definiciones del modulo
-exposes: {
-   './GuestModule': './projects/microfrontend/src/app/guest/guest.module.ts',
-},
-```
+    ```
+    name: "microfrontend",
+    filename: "mfRemoteEntry.js", //Nombre de archivo que se expone, tiene todas las definiciones del modulo
+    exposes: {
+       './GuestModule': './projects/microfrontend/src/app/guest/guest.module.ts',
+    },
+    ```
 
 11. Enrutar el microfrontend dentro del host con loadChildren
 
