@@ -26,7 +26,7 @@ Pasos para el module federation:
 
    Esto crea una carpeta llamada proyectos y ahí estará el host que acabamos de crear
 
-4. Creamos nuestro frontend
+4. Creamos nuestro micro frontend
 
    ```
    cd workspace
