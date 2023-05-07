@@ -1,4 +1,4 @@
-# module-federation
+# MODULE FEDERATION
 
 Seguir el video: https://youtu.be/PnzI3GGozLA?list=PL6PxPH2IZvJoIXOIvQUzrMhCfIz6YCiNN
 
