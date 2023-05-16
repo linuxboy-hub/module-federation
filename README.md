@@ -1,6 +1,7 @@
 # MODULE FEDERATION
 
 Seguir el video: https://youtu.be/PnzI3GGozLA?list=PL6PxPH2IZvJoIXOIvQUzrMhCfIz6YCiNN
+
 Otro ejemplo: https://www.thirdrocktechkno.com/blog/how-to-build-micro-frontend-in-angular-with-module-federation/#:~:text=Module%20Federation%20is%20a%20way,other%20using%20a%20shared%20API
 
 Pasos para el module federation:
