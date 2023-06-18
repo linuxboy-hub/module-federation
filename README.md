@@ -64,12 +64,24 @@ Pasos para el module federation:
    ```
 
    Al finalizar esto, se creará en el host, un archivo webpack.config.js
+   
+   Se puede indicar de manera automática el tipo de aplicación, o sea, indicar si
+   es host o si es remote
+   ```
+   ng add @angular-architects/module-federation --project host --type host --port 5000
+   ```
 
-9. Instalar la misma librería para el microfrontend pero usar un puerto diferente
+10. Instalar la misma librería para el microfrontend pero usar un puerto diferente
    ```
    ng add @angular-architects/module-federation --project microfront --port 4242
    ```
    Al finalizar esto, se creará en el microfront, un archivo webpack.config.js
+   
+   Se puede indicar de manera automática el tipo de aplicación, o sea, indicar si
+   es host o si es remote
+   ```
+   ng add @angular-architects/module-federation --project microfront --type remote --port 4242
+   ```
 
 ## AJUSTAR WEBPACK PARA HOST Y PARA MICROFRONTEND
 
