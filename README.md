@@ -113,7 +113,7 @@ Pasos para el module federation:
     ```
     {
       path: 'microfrontend',
-      loadChildren: () => import('microfrontend/ModuleName').then(m => m.ModuleName)
+      loadChildren: () => import('microfrontend/GuestModule').then(m => m.GuestModule)
     }
     ```
 
@@ -122,5 +122,16 @@ Pasos para el module federation:
 12. El compilador de angular a veces no coge el modulo que se acabó de enrutar, por tanto, es necesario
     crear un archivo de declaraciones en el host, dentro de app, se puede llamar "declarations.d.ts" y va a contener lo siguiente:
     ```
-    declare module "microfrontend/ModuleName";
+    declare module "microfrontend/GuestModule";
     ```
+13. Otra manera de hacer el enrutamiento sin necesidad de crear el archivo de declaraciones es de la siguiente manera:
+   ```
+   {
+    path: 'microfrontend',
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
+      remoteEntry: 'http://localhost:4201/remoteEntry.js',
+      exposedModule: './GuestModule',
+    }).then((module) => module.GuestModule)
+  }
+   ```
